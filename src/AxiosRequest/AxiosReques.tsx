@@ -1,20 +1,15 @@
 
 
 import axios, { AxiosResponse, AxiosError } from 'axios';
-
+import { DeveloperLevel } from '../Components/PersonalMap/typesPersonMap';
 // Define a type for the data you expect to receive
-interface UserData {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
-}
+
 
 // Example function to fetch data using Axios
 const fetchData = async (url: string) => {
   try {
     // Make a GET request
-    const response: AxiosResponse<UserData[]> = await axios.get(url);
+    const response: AxiosResponse<DeveloperLevel[]> = await axios.get(url);
 
     // Access the data
     const data = response.data;

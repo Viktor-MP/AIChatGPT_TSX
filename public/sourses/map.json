@@ -1,41 +1,18 @@
-{
-    "junior":{
-        "level" : "Junior level",
-        "knowledge": ["HTML", "CSS",  "Responsive Design", "JavaScript", "Git", "ReactJS"]
+[
+    {
+        "level" : "Junior Front-End Developer",
+        "knowledge": ["HTML", "CSS",  "Responsive Design", "JavaScript", "Version Control"]
     },
-    "middle": {
-        "level" : "Middle level",
-        "knowledge" : ["Advanced HTML/CSS:", "SASS", "TypeScript", 
-            {
-                "like": "Frameworks",
-                "frame": ["React.js", "Angular.js", "Vue.js"]
-            },
-            {
-                "like": "Asynchronous requests",
-                "frame": ["XML", "Fetch", "Axios", "AJAX"] 
-            }
-    ]
+    {
+        "level" : "Mid-Level Front-End Developer",
+        "knowledge" : ["Advanced HTML/CSS:", "CSS Preprocessors", "TypeScript",  "Frameworks", "Libraries", "Asynchronous requests", "Promise"]
     },
-    "senior": {
-        "level" :"Senior level",
-        "knowledge" : [
-            {
-                "like": "Advanced JavaScript",
-                "frame" : ["Closures", "Prototypes and Inheritance", "Promises", "ES6+ Features", "OOP"]
-
-            }, "Performance Optimization", "Accessibility", "Testing", "UX/UI Design Principles", "Responsive Web Design"]
+    {
+        "level" :"Senior Front-End Developer",
+        "knowledge" : [ "Performance Optimization", "Accessibility", "Testing", "UX/UI Design Principles", "Responsive Web Design", "Advanced JavaScript"]
     },
-    "full_Stack" : {
-        "leve" : "Full-Stack level",
-        "knowledge" : [
-            {
-                "like" : "Server-side lenguages",
-                "knowledge" : ["Node", "Python", "Java", "GO"]
-            },
-            {
-                "like" : "API Design",
-                "knowledge" : ["RESTful", "GraphQL"]
-            }
-    ]
+    {
+        "level" : "Full-Stack Developer",
+        "knowledge" : ["Server-side languages", "API Design", "Security", "DevOps"]
     }
-}
+]
