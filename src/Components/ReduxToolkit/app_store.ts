@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 // ...
-import messageChanger from "../PersonalChat/ChatComponents/UserChat/UserChatMessage"
+import { counterSlice } from "../PersonalChat/ChatComponents/UserChat/UserChatMessage"
+import { TypedUseSelectorHook, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 export const store = configureStore({
   reducer: {
-    message: messageChanger,
+    message: counterSlice.reducer,
   },
 });
 

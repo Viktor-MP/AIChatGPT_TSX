@@ -6,7 +6,7 @@ import React, { ChangeEvent, FC, useState } from 'react'
 import { formDataType } from '../../typesPersonChat'
 import { PersonType } from '../../../PersonalMap/typesPersonMap'
 import { sendMessage } from '../UserChat/UserChatMessage'
-import { useDispatch } from 'react-redux'
+import { useAppDispatch } from '../../../ReduxToolkit/app_hooks'
 
 const UserForm:FC <PersonType> = ({className}) => {
     const inputTypes:string[] = ['text', 'button']
@@ -15,7 +15,7 @@ const UserForm:FC <PersonType> = ({className}) => {
     const [formData, setFormData] = useState<formDataType>({
         message: '',
     })
-    const reduxDespetch = useDispatch()
+    const reduxDespetch = useAppDispatch()
     
     const changingType: React.ComponentProps<"input">["onClick"] = (e) => {
         console.dir(e.target)
@@ -30,9 +30,8 @@ const UserForm:FC <PersonType> = ({className}) => {
       };
 
 
-    const sendingDataMessage = (data: formDataType) => {
-        console.log(data)
-        reduxDespetch(sendMessage(formData.message))
+    const sendingDataMessage = (data: any) => {
+        reduxDespetch(sendMessage(data))
     }
 
 

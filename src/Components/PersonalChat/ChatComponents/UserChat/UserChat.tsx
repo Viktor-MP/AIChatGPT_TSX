@@ -13,7 +13,7 @@ const UserChat:FC <PersonType> = ({className}) => {
   return (
     <div className={className}>
         <div className='_chat_'>
-          {reduxMessage}
+          {/* {reduxMessage} */}
         </div>
       
     </div>
