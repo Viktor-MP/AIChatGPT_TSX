@@ -18,13 +18,16 @@ export const counterSlice = createSlice({
   // `createSlice` will infer the state type from the `initialState` argument
   initialState,
   reducers: {
-    sendMessage: (message: formDataType) => {
-      console.log(message);
+    sendMessage: (state: CounterState, action: PayloadAction<formDataType>) => {
+      
+      state.message = action.payload.message;
     },
   },
 });
 
 export const { sendMessage } = counterSlice.actions;
+
+export const getMessageState = (state: RootState) => state.message;
 
 // Other code such as selectors can use the imported `RootState` type
 // export const selectCount = (state: RootState) => state.counter.value
