@@ -26,6 +26,7 @@ const UserForm: FC<PersonType> = ({ className }) => {
 
   const sendingDataMessage = (data: any) => {
     reduxDespetch(sendMessage(data));
+    console.log('hello')
   };
 
   const submitSend: React.ComponentProps<"form">["onSubmit"] = (e) => {
